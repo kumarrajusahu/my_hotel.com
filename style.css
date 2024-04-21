@@ -1,0 +1,431 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+
+.container .box {
+  height: 125px;
+  padding-bottom: 10px;
+  color: #6c727f;
+  font-size: 18px;
+}
+
+/*------navvigation bar-----*/
+.desktop-nav {
+  background-color: #31cec3;
+}
+nav .container {
+  position: relative;
+  left: 100px;
+}
+
+.dropdown-menu[data-bs-popper] {
+  left: -200px;
+}
+
+.dropdown-menu {
+  --bs-dropdown-min-width: 15rem;
+}
+/* -----phone------------- */
+@media only screen and (max-width: 600px) {
+  .desktop-nav {
+    display: none;
+  }
+  .container {
+    width: 88%;
+  }
+
+  .container .box {
+    height: 62px !important;
+    padding-bottom: 22px !important;
+  }
+
+  #room3 {
+    margin-top: 16px;
+    margin-bottom: -3px;
+  }
+
+  .mobile-nav {
+    width: 79%;
+    position: relative;
+    left: 11px;
+
+    margin-left: 24px;
+    margin-right: 24px;
+    border-bottom: 2px solid black;
+    border-right: 1px solid black;
+    margin-bottom: 8px;
+  }
+
+  .resrerve input {
+    color: white;
+    width: 73%;
+  }
+
+  .form-apointment {
+    position: relative;
+    bottom: 0em !important;
+    height: auto !important;
+    margin-bottom: 13px !important;
+  }
+
+  .top {
+    margin-inline-start: 20px !important;
+    width: 87%;
+  }
+
+  .box-img {
+    margin-top: 10px;
+  }
+
+  .carousel-inner {
+    margin: 0px 4px 0px 4px;
+
+    position: relative;
+    right: 4px;
+    width: 100%;
+  }
+
+  .mobile-nav {
+    display: block !important;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  .fa-chevron-left {
+    position: relative !important;
+    top: -8em !important;
+    left: 16em !important;
+  }
+
+  .fa-chevron-right {
+    font-weight: 900;
+    color: black;
+    position: relative;
+    top: -8em !important;
+    left: -20px !important;
+  }
+  #end-button {
+    position: relative;
+    left: 304px !important;
+  }
+
+  .working-hour {
+    width: 100%;
+  }
+  textarea {
+    /* position: relative !important; */
+    /* left: -16px !important; */
+    width: 88% !important ;
+
+  }
+
+  .accordion-button::after {
+    height: 15px !important;
+    margin-left: -6px;
+  }
+
+  .form-control {
+    background-color: #ffffff;
+
+    margin-left: 1.4em;
+  }
+  .accordion-button {
+    width: 13.5% !important;
+  }
+
+
+
+
+  form div {
+    width: 100% !important;
+  }
+  
+
+  footer form{
+    margin-left: 30px;
+    height: 249px;
+  }
+
+
+  .submit {
+    position: relative !important;
+    left:7em !important;
+    top:9px !important;
+  }
+
+
+  .footer-img ul li img {
+    padding: 10px;
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+
+
+  footer .footer-img ul li {
+    /* list-style-type: none; */
+    margin: 10px !important;
+}
+
+.heading3{
+  padding: 0 14px !important;
+}
+}
+
+
+
+/* @media only screen and (max-width: 400px) and (min-width: 350px){
+  {}
+} */
+
+
+
+
+/* -----------pc-------------- */
+@media only screen and (min-width: 992px) {
+  .mobile-nav {
+    display: none !important;
+  }
+
+  .form .outer {
+    position: relative;
+    bottom: 100px;
+  }
+
+  #rooms {
+    display: flex;
+  }
+
+  #roomh3 {
+    position: relative;
+    top: -0.5em;
+  }
+
+  .carousel-inner {
+    position: relative;
+    width: 115%;
+    overflow: hidden;
+  }
+
+  .contact {
+    width: 23% !important;
+  }
+
+  textarea {
+    /* position: relative;
+    right: 1em; */
+    width: 97% !important;
+  }
+
+
+
+  .submit {
+    position: relative;
+    left: 7.5em;
+    top: 9px !important ;
+  }
+}
+
+/* -------------etra large device-- */
+
+#remove {
+  border: none;
+}
+.nav-link:hover {
+  background-color: black;
+  border: 1px solid black;
+  border-radius: var(--bs-border-radius) !important;
+}
+
+.form-apointment {
+  background-color: black;
+  position: relative;
+  bottom: 3em;
+  width: 97%;
+  border-top: 10px solid #31cec3;
+  height: 100px;
+}
+
+.form-apointment {
+  background-color: black;
+  position: relative;
+  bottom: 76px;
+  width: 100%;
+  border-top: 10px solid #31cec3;
+  height: 76px;
+  margin-bottom: -44px;
+}
+
+.container form .outer {
+  background-color: #fff;
+
+  z-index: 3;
+}
+
+form div {
+  width: 110%;
+}
+
+/* -------container------- */
+
+#rooms ul li {
+  list-style: none;
+  position: relative;
+  left: -32px;
+  border-bottom: 2px solid #eaebec;
+}
+
+#rooms .para-text {
+  border-bottom: 2px solid #eaebec;
+}
+
+/*---------accordion------*/
+.accordion {
+  --bs-accordion-border-color: none;
+  --bs-accordion-active-bg: #31cec3;
+}
+.accordion-button {
+  border-bottom: 1px solid #e6e6e6;
+  border-radius: 50%;
+  width: 11%;
+
+  background-color: #31cec3;
+}
+.accordion-button::after {
+  height: 20px;
+  padding: 3px;
+}
+
+.accordion-item:first-of-type > .accordion-header .accordion-button {
+  border-radius: 50%;
+}
+
+.accordion-item:last-of-type > .accordion-header .accordion-button.collapsed {
+  border-radius: 50%;
+}
+
+.accordion-header {
+  margin: 0.5em;
+  border-bottom: 1px solid #d6dac8;
+}
+
+.carousel-item p {
+  background-color: #f6f6f6;
+}
+
+#testimonial img {
+  height: 30px;
+
+  position: relative;
+  top: -19px;
+  left: 33px;
+}
+
+.name {
+  position: relative;
+  right: -4em;
+  top: -1em;
+}
+
+.fa-chevron-left {
+  font-weight: 900;
+  color: black;
+  position: relative;
+  top: -6em;
+  left: 33em;
+}
+
+.fa-chevron-right {
+  font-weight: 900;
+  color: black;
+  position: relative;
+  top: -6em;
+}
+/*-------footer---- */
+footer {
+  background-color: #495059;
+}
+
+footer form {
+  color: white;
+}
+.working-hour {
+  color: white;
+  text-align: start;
+  margin-left: 0.5em;
+}
+
+textarea {
+  background-color: #6c727f;
+  color: white;
+  text-align: left;
+  border: 1px solid black;
+  width: 88%;
+}
+
+.form-control {
+  margin-inline-start: 5px;
+  width: 88%;
+  background-color: #6c727f;
+  border: 1px solid black;
+  border-radius: 0px;
+  color: white;
+}
+
+.footer-img {
+  text-align: start;
+  color: white;
+}
+
+footer .footer-img ul li {
+  list-style-type: none;
+  margin: 6px;
+}
+
+.footer-img ul li img {
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid white;
+  border-radius: 13px;
+}
+
+.contact {
+  margin-left: 0.5em;
+  margin-bottom: 2em;
+  text-align: start;
+  color: white;
+}
+
+.submit {
+  position: relative;
+  left: 7.5em;
+  top: -6px;
+  background-color: #31cec3;
+
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+#end-button {
+  background-color: #31cec3;
+  border: 1px solid white;
+  height: 2em;
+  width: 2em;
+  border-radius: 50%;
+  position: relative;
+  left: 1224px;
+  bottom: 45px;
+}
+.container {
+  width: unset;
+}
+
+body {
+  overflow-x: hidden;
+}
+footer{
+  overflow-x:hidden ;
+}

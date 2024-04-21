@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MyHotel.com</title>
+    <!----------including bootstrap------>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!----------------including fontawesome------------>
+    <script
+      src="https://kit.fontawesome.com/0954480d4b.js"
+      crossorigin="anonymous"
+    ></script>
+    <!----------------including google font----------->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&display=swap"
+      rel="stylesheet"
+    />
+    <!---------------including-------------------->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!---------------header start----------------->
+    <header id="#top">
+      <div class="container">
+        <div class="row mt-3">
+          <div class="box col-md-4 col-sm-12 pt-lg-5 text-center">
+            <i class="fa-solid fa-envelope"></i>
+            &nbsp; &nbsp;support@MyHotel.com
+          </div>
+          <div class="box col-md-4 col-sm-12 text-center">
+            <img src="images/logo.jpg" class="img-fluid" alt="" />
+          </div>
+          <div class="box col-md-4 col-sm-12 text-center pt-5">
+            <i class="fa-solid fa-phone"></i>&nbsp; &nbsp; (800) 186 49 123 456
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg desktop-nav">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item ms-5">
+              <a
+                class="nav-link text-light bg-dark border-dark rounded border-radius-1"
+                id="home"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link text-light" href="#">ACCOMMODATION</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link text-light" href="#">ABOUTUS</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link text-light" aria-disabled="true">GALLERY</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link text-light" aria-disabled="true"
+                >TESTIMONIALS</a
+              >
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link text-light" aria-disabled="true">NEWS</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link text-light" aria-disabled="true">CONTACTUS</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-----------------mobile navigation bar--------------->
+    <nav class="navbar mobile-nav">
+      <div class="container-fluid d-flex ">
+        <div class="col col-sm-10">Go....</div>
+        <div class="dropdown">
+          <button
+            class="btn dropdown-toggle"
+            type="button"
+            id="remove"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          ></button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!------------------caurosel------------->
+    <div
+      id="carouselExampleAutoplaying"
+      class="carousel container mx-sm-2 ps-lg-0 slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/slide02.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="images/slide02.jpg" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!---------Apointment form----------->
+    <div id="" class="container form outer mb-lg-0  ">
+      <div class="form-apointment">
+        <form class="row g-3">
+          <div class="col-12 col-lg-2 mx-md-4 pt-md-3 pb-md-3">
+            <input
+              type="text"
+              class="form-control top"
+              id="inputDate2"
+              placeholder="Check In"
+            />
+          </div>
+          <div class="col-12 col-lg-2 mx-md-4 pt-md-3 pb-md-3">
+            <input
+              type="text"
+              placeholder="Check Out"
+              class="form-control top"
+              id="inputPassword2"
+            />
+          </div>
+          <div class="col-12 col-lg-2 mx-md-4 pt-md-3 pb-md-3">
+            <input
+              type="text"
+              class="form-control top"
+              id="inputPassword2"
+              placeholder="Adelts"
+            />
+          </div>
+          <div class="col-12 col-lg-2 mx-md-4 pt-md-3 pb-md-3">
+            <input
+              type="text"
+              class="form-control top"
+              id="inputPassword2"
+              placeholder="Children"
+            />
+          </div>
+          <div class="col-12 col-lg-2 reserve pt-md-3 pb-md-3">
+            <input
+              type="text"
+              class="form-control top text-center"
+              id="inputPassword2"
+              placeholder="RESERVE NOW!"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!---------------container---------------------->
+
+    <div id="rooms" class="container">
+      <div class="row">
+        <h3 id="roomh3"><b>Latest Room Details</b></h3>
+        <div class="box-img col-md-4 px-md-3">
+          <img
+            src="images/hotel-1979406_1280.jpg"
+            class="img-fluid col col-sm-12"
+            style="width: 26em"
+            alt=""
+          />
+          <h4>Grand Executive</h4>
+          <p class="para-text">
+            Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+            lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis
+            sem nibh id elit. Duis sed odio sit amet
+          </p>
+
+          <ul class="">
+            <li>
+              <i class="fa-regular fa-square-check"></i>&nbsp; &nbsp; Quality
+              Linens
+            </li>
+            <li>
+              <i class="fa-regular fa-square-check"></i>&nbsp; &nbsp; Individual
+              Thermostat Control
+            </li>
+            <li>
+              <i class="fa-regular fa-square-check"></i>&nbsp; &nbsp; Fireplace
+              and jetted tubs
+            </li>
+          </ul>
+        </div>
+        <div class="box-img col-md-4 px-md-3">
+          <img
+            src="images/living-room-6778197_1280.jpg"
+            class="img-fluid col col-sm-12"
+            style="width: 26em"
+            alt=""
+          />
+          <h4>Deluxe Room</h4>
+          <p class="para-text">
+            Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+            lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis
+            sem nibh id elit. Duis sed odio sit amet
+          </p>
+
+          <ul class="">
+            <li>
+              <i class="fa-regular fa-square-check"></i>&nbsp; &nbsp; Quality
+              Linens
+            </li>
+            <li>
+              <i class="fa-regular fa-square-check"></i>&nbsp; &nbsp; Individual
+              Thermostat Control
+            </li>
+            <li>
+              <i class="fa-regular fa-square-check"></i>&nbsp; &nbsp; Fireplace
+              and jetted tubs
+            </li>
+          </ul>
+        </div>
+        <div class="box-img col-md-4 px-md-3">
+          <img
+            src="images/hotel-1979406_1280.jpg"
+            class="img-fluid col col-sm-12"
+            style="width: 26em"
+            alt=""
+          />
+          <h4>Traditional Room</h4>
+          <p class="para-text">
+            Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+            lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis
+            sem nibh id elit. Duis sed odio sit amet
+          </p>
+
+          <ul class="">
+            <li>
+              <i class="fa-regular fa-square-check"></i>&nbsp; &nbsp; Quality
+              Linens
+            </li>
+            <li>
+              <i class="fa-regular fa-square-check"></i>&nbsp; &nbsp; Individual
+              Thermostat Control
+            </li>
+            <li>
+              <i class="fa-regular fa-square-check"></i>&nbsp; &nbsp; Fireplace
+              and jetted tubs
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-------------------accordion----------------->
+    <div class="container my-3">
+      <div class="row">
+        <div class="accordion col-lg-6">
+          <div class="accordion-item">
+            <h2 class="accordion-header d-flex">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse1"
+                aria-expanded="false"
+                aria-controls="collapse1"
+              ></button>
+              <p>Fast check in / out</p>
+            </h2>
+            <div
+              id="collapse1"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is
+                hidden by default, until the collapse plugin adds the
+                appropriate classes that we use to style each element. These
+                classes control the overall appearance, as well as the showing
+                and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth
+                noting that just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit
+                overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header d-flex">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse3"
+                aria-expanded="false"
+                aria-controls="collapse3"
+              ></button>
+              <p>Free  Cars Parking </p>
+            </h2>
+            <div
+              id="collapse3"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is
+                hidden by default, until the collapse plugin adds the
+                appropriate classes that we use to style each element. These
+                classes control the overall appearance, as well as the showing
+                and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth
+                noting that just about any HTML can go within the though the
+                transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header d-flex">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse4"
+                aria-expanded="false"
+                aria-controls="collapse4"
+              ></button>
+              <p>Site Seeing Tours</p>
+            </h2>
+            <div
+              id="collapse4"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is
+                hidden by default, until the collapse plugin adds the
+                appropriate classes that we use to style each element. These
+                classes control the overall appearance, as well as the showing
+                and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth
+                noting that just about any HTML can go within the , though the
+                transition does limit overflow.
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-------------testimonial----------------->
+        <div class="col-lg-6" id="testimonial">
+          <h3>Client Testimonials</h3>
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                  eos, iusto molestias eaque tempore deserunt esse repudiandae,
+                  distinctio quo animi beatae laborum, possimus suscipit?
+                  Reiciendis eius expedita possimus assumenda at?
+                </p>
+                <img
+                  src="images/testimonial-arrow.png"
+                  class="d-block img-fluid"
+                  alt="..."
+                />
+                <div class="name">
+                  <strong>Rohan</strong>
+                  <span>-Web Designer</span>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo
+                  laudantium asperiores repellat amet eum distinctio in
+                  voluptatem alias veniam eaque quidem ab, assumenda obcaecati
+                  fugiat nam quis dolorum pariatur accusantium.
+                </p>
+                <img
+                  src="../images/testimonial-arrow.png"
+                  class="d-block img-fluid"
+                  alt="..."
+                />
+                <div class="name">
+                  <strong>Alex Orange</strong>
+                  <span>-Happy Customer</span>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Commodi, soluta perferendis unde asperiores officia nam
+                  ratione consequuntur minima reprehenderit eum quo, adipisci
+                  aperiam facilis labore? Animi placeat tempora nihil quisquam?
+                </p>
+                <img
+                  src="images/testimonial-arrow.png"
+                  class="d-block img-fluid"
+                  alt="..."
+                />
+                <div class="name">
+                  <strong>Roshan</strong>
+                  <span>-Happy Buyer</span>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-" aria-hidden="true"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-" aria-hidden="true"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-----------------------footer------------------------>
+    <footer>
+      <div class="container text-center py-3">
+        <div class="row">
+          <div class="form col-lg-3 text-light">
+            <h3 class="heading3 text-start">&nbsp; Get in touch</h3>
+            <form>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control text-light"
+                  placeholder="Name"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control text-light"
+                  placeholder="E-mail"
+                  id="exampleInputPassword1"
+                />
+              </div>
+             
+                <textarea name="" type="text" id="" class="text-star form-control" >
+                  Message
+                </textarea>
+              
+              <button type="submit" class="btn submit">Send</button>
+            </form> 
+          </div>
+          <div class="col-lg-3 footer-img">
+            <div class="row ">
+              <h3 class="heading3">&nbsp; &nbsp;FLICKR GALLERY</h3>
+              <ul class="d-flex justify-content-center">
+                <li><img src="images/footer-1.jpg" alt="" /></li>
+                <li><img src="images/footer-2.jpg" alt="" /></li>
+                <li><img src="images/footer-3.jpg" alt="" /></li>
+              </ul>
+              <ul class="d-flex justify-content-center">
+                <li><img src="images/footer-4.jpg" alt="" /></li>
+                <li><img src="images/footer-5.jpg" alt="" /></li>
+                <li><img src="images/footer-6.jpg" alt="" /></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="working-hour col-lg-3 col-sm-12">
+            <h3 class="heading3">WORKING HOURS</h3>
+            <p class="heading3">
+              This is Photoshop's version of Lorem Ipsum. Proin gravida     nibh vel velit auctor aliquet. Aenean sollicitudin, lorem     quis bibendum amet nibh sed odio sit amet elit aliquet velit     auctor ipsum gravida.
+
+            </p
+            >
+            <p class="heading3">Mon - Fri : 10 AM to 5 PM</p>
+            <p class="heading3">Sat - Sun : 10 AM to 2 PM</p>
+          </div>
+
+          <div class="contact col-lg-3 px-lg-0 me-lg-0 bg-red text-star ">
+            <h3 class="heading3">Contact us</h3>
+            <p class="heading3">
+              <i class="fa-solid fa-house"></i> lorem ipsum street,
+              melbourne, 2245
+            </p>
+            <p class="heading3"><i class="fa-solid fa-phone"></i> +399 (500) 321 9548</p>
+            <p class="heading3"><i class="fa-solid fa-envelope"></i>&nbsp; yourcompany@yourdomain.com</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="late border-top border-1 w-60 text-light " >
+          <p class="text-light pt-3">© 2013 My Hotel, All Rights Reserved</p>
+          <a href="#top"><button type="button"  id="end-button"><i class="fa-solid fa-angle-up"></i></button></a>
+        </div>
+      </div>
+
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+<!---<uniquifier>: Use a unique and descriptive class name
+    // <weight>: Use a value from 300 to 900
+    
+    .frank-ruhl libre-<uniquifier> {
+      font-family: "Frank Ruhl Libre", serif;
+      font-optical-sizing: auto;
+      font-weight: <weight>;
+      font-style: normal;
+    }
+
+    ---->
