@@ -66,8 +66,9 @@ nav .container {
   .form-apointment {
     position: relative;
     bottom: 0em !important;
-    height: auto !important;
+    height: 310px !important;
     margin-bottom: 13px !important;
+    padding-top: 20px;
   }
 
   .top {
